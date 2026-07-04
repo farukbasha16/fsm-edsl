@@ -1,0 +1,7 @@
+.stack-work/
+dist/
+*.hi
+*.o
+*.prof
+*.aux
+*.hp
