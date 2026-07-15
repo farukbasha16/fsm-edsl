@@ -1,27 +1,47 @@
 # FSM-eDSL
 
-A type-safe Embedded Domain Specific Language (eDSL) in Haskell for modelling, simulating, analysing, and verifying Finite State Machines.
+>> A research-oriented Haskell project exploring the design and implementation of a type-safe Embedded Domain-Specific Language (eDSL) for modelling, simulating, analysing, and verifying Finite State Machines (FSMs).
 
 ---
 
-## Project Overview
+## Overview
 
-This project is developed as part of my B.Tech Computer Science project.
+FSM-eDSL is an ongoing research project that explores how Haskell's advanced type system can be leveraged to design expressive, safe, and extensible Embedded Domain-Specific Languages (eDSLs) for Finite State Machines (FSMs).
 
-The objective is to design a declarative, type-safe eDSL that allows users to describe finite state machines naturally while ensuring correctness through Haskell's strong type system.
+It investigates the use of modern functional programming techniques—including algebraic data types, GADTs, DataKinds, type classes, and final tagless encoding—to provide compile-time guarantees while supporting simulation, graph analysis, and formal verification.
 
-Later phases will include:
-
-- Graph Analysis (FGL)
-- Property-Based Testing (QuickCheck)
-- Property-Based Testing (Hedgehog)
-- SMT-Based Verification (SBV + Z3)
-- Interactive Simulation
-- Formal Verification
+The repository serves as the primary implementation and research workspace for the project, documenting design decisions and incremental development throughout the research process.
 
 ---
 
-## Technologies
+## Research Goals
+
+The project aims to:
+
+- Design a declarative Embedded Domain-Specific Language (eDSL) for Finite State Machines.
+- Explore type-safe modelling through Haskell's advanced type system.
+- Develop reusable abstractions for modelling finite state machines.
+- Investigate techniques for simulation, graph analysis, and formal verification.
+- Evaluate the application of functional programming to software correctness.
+
+---
+
+## Research Directions
+
+The project will progressively explore the following research directions as the implementation evolves:
+
+- Type-safe FSM modelling
+- Embedded DSL design
+- Interactive simulation
+- Graph-based analysis using FGL
+- Property-based testing with QuickCheck
+- Property-based testing with Hedgehog
+- SMT-based verification using SBV and Z3
+- Formal verification of FSM properties
+
+---
+
+## Technology Stack
 
 - Haskell
 - GHC
@@ -31,40 +51,54 @@ Later phases will include:
 - Haskell Language Server (HLS)
 - VS Code
 - WSL2 Ubuntu
-
----
-
-## Current Status
-
-✅ Development environment configured
-
-✅ Stack project initialized
-
-✅ Git repository initialized
-
-⬜ FSM Core
-
-⬜ DSL Design
-
-⬜ Graph Analysis
-
-⬜ Testing
-
-⬜ Verification
+- Git & GitHub
 
 ---
 
 ## Repository Structure
 
+```text
+app/          Executable entry point
+src/          Library source code
+test/         Test suite
+docs/         Project Documentation
+diagrams/     Project diagrams
 ```
-app/
-src/
-test/
-docs/
+
+---
+
+## Current Focus
+
+The current phase focuses on strengthening the Haskell foundations required for building a type-safe eDSL, including algebraic data types, type classes, and advanced type system features.
+
+
+## Building
+
+```bash
+stack build
+stack test
+stack ghci
 ```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
 
 ## Author
 
-Faruk Basha
+**Faruk Basha**
+
+B.Tech, Computer Science and Engineering
+
+Amrita Vishwa Vidyapeetham
+
+Research Interests:
+- Formal Verification
+- Functional Programming
+- Programming Languages
+
+GitHub: https://github.com/farukbasha16
