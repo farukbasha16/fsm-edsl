@@ -8,7 +8,7 @@
 
 FSM-eDSL is an ongoing research project that explores how Haskell's advanced type system can be leveraged to design expressive, safe, and extensible Embedded Domain-Specific Languages (eDSLs) for Finite State Machines (FSMs).
 
-It investigates the use of modern functional programming techniques—including algebraic data types, GADTs, DataKinds, type classes, and final tagless encoding—to provide compile-time guarantees while supporting simulation, graph analysis, and formal verification.
+It investigates the use of modern functional programming techniques including algebraic data types, GADTs, DataKinds, type classes, and final tagless encoding to provide compile-time guarantees while supporting simulation, graph analysis, and formal verification.
 
 The repository serves as the primary implementation and research workspace for the project, documenting design decisions and incremental development throughout the research process.
 
